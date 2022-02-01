@@ -1,0 +1,22 @@
+body{
+  font-family: Poppins;
+}
+h1{
+  text-align: center;
+}
+p{
+  text-align:center;
+}
+form{
+  text-align:center;
+  display:block;
+  background: #FF0FF0;
+}
+label{
+  text-align:left;
+}
+footer{
+  background:#F0FF0F;
+  text-align:center;
+  padding:0.4%;
+}
