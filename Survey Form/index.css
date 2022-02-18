@@ -1,22 +1,85 @@
-body{
-  font-family: Poppins;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: white;
+  margin: 0;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: #1b1b32;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 h1{
   text-align: center;
 }
+
+#description{
+  text-decoration: bold;
+}
+
 p{
   text-align:center;
 }
+
 form{
-  text-align:center;
   display:block;
-  background: #FF0FF0;
 }
+
 label{
   text-align:left;
 }
+
+input,
+button,
+select,
+textarea {
+  width: 100%;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin-bottom: 10px;
+}
+
+button {
+  border: none;
+}
+
 footer{
   background:#F0FF0F;
+  color: #1b1b32;
   text-align:center;
   padding:0.4%;
+}
+
+.form{
+ background: #1b1b32;
+  opacity: 0.9;
+  margin: 10px 200px;
+  padding: 20px 30px;
+  color: white;
 }
